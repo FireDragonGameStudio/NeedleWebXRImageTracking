@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+        <title>Made with Needle</title>
+
+        <meta property="og:title" content="Made with Needle" />
+        <meta name="description" content="🌵 Made with Needle Engine" />
+        <meta property="og:description" content="🌵 Made with Needle Engine" />
+
+        <meta name="robots" content="index,follow" />
+        <meta name="url" content="http://needle.tools" />
+
+        <link rel="stylesheet" href="./src/styles/style.css" />
+    </head>
+
+    <body>
+        <script>
+            // hack for simple-peer
+            window.global = window;
+            var parcelRequire;
+        </script>
+        <script type="module" src="./src/generated/gen.js"></script>
+        <script type="module" src="./src/main.ts"></script>
+
+        <!-- images for webxr image tracking; still in draft so it may change in future -->
+        <img id="imgMarkerHiro" src="https://raw.githubusercontent.com/stemkoski/AR.js-examples/master/markers/hiro.png" alt="hiro" style="display: none" />
+        <img id="imgNFTEarth" src="https://raw.githubusercontent.com/stemkoski/AR.js-examples/master/images/earth-flat.jpg" alt="earth" style="display: none" />
+
+        <needle-engine></needle-engine>
+    </body>
+</html>
